@@ -3,7 +3,7 @@ name: Fetch and Process Release Asset
 on:
   repository_dispatch:
     types:
-      - triggered-by-release
+      - [triggered-by-release]
 
 jobs:
   download-and-process-asset:
