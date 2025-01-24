@@ -35,6 +35,8 @@ jobs:
         run: |
           echo "Files in unzipped directory:"
           ls ./unzipped-assets
+          ls -R ./unzipped-assets
+
       
        # Étape 4 : Remplacer les fichiers existants
       - name: Replace existing files with new ones
