@@ -1,0 +1,41 @@
+name: Fetch and Process Release Asset
+
+on:
+  repository_dispatch:
+    types:
+      - triggered-by-release
+
+jobs:
+  download-and-process-asset:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up GitHub CLI
+        uses: cli/cli-action@v2
+        with:
+          gh-version: latest
+
+      - name: Download the ZIP asset from repo1
+        run: |
+          repo_owner="li-albantrang"  # Propriétaire de repo1
+          repo_name="test-routing"   # Nom de repo1
+          RELEASE_TAG="${{ github.event.client_payload.version }}""
+
+          echo "Téléchargement de l'asset depuis la release $RELEASE_TAG"
+
+          # Télécharger l'asset ZIP
+          gh release download $RELEASE_TAG \
+            --repo $repo_owner/$repo_name \
+            --pattern "release-toto.zip" \
+            --dir ./downloaded-assets
+
+      - name: Unzip the downloaded asset
+        run: |
+          echo "Unzipping asset"
+          mkdir -p ./unzipped-assets
+          unzip ./downloaded-assets/release-toto.zip -d ./unzipped-assets
+
+      - name: List files in unzipped directory
+        run: |
+          echo "Files in unzipped directory:"
+          ls ./unzipped-assets
