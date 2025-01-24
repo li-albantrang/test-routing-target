@@ -39,12 +39,12 @@ jobs:
        # Étape 4 : Remplacer les fichiers existants
       - name: Replace existing files with new ones
         run: |
-          cp ./unzipped-assets/immonet/live.yml configs/immonet/live/routings/live.yml
-          cp ./unzipped-assets/immonet/preview.yml configs/immonet/preview/routings/preview.yml
-          cp ./unzipped-assets/immonet/dev.yml configs/immonet/dev/routings/dev.yml
-          cp ./unzipped-assets/immoweb/live.yml configs/immoweb/live/routings/live.yml
-          cp ./unzipped-assets/immoweb/preview.yml configs/immoweb/preview/routings/preview.yml
-          cp ./unzipped-assets/immoweb/dev.yml configs/immoweb/dev/routings/dev.yml
+          cp ./unzipped-assets/configs/immonet/live.yml configs/immonet/live/routings/live.yml
+          cp ./unzipped-assets/configs/immonet/preview.yml configs/immonet/preview/routings/preview.yml
+          cp ./unzipped-assets/configs/immonet/dev.yml configs/immonet/dev/routings/dev.yml
+          cp ./unzipped-assets/configs/immoweb/live.yml configs/immoweb/live/routings/live.yml
+          cp ./unzipped-assets/configs/immoweb/preview.yml configs/immoweb/preview/routings/preview.yml
+          cp ./unzipped-assets/configs/immoweb/dev.yml configs/immoweb/dev/routings/dev.yml
 
       # Étape 5 : Créer une nouvelle branche et commit
       - name: Commit changes
