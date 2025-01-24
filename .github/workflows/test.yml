@@ -64,6 +64,7 @@ jobs:
           touch configs/immonet/live/routings/.gitkeep
           touch configs/immonet/preview/routings/.gitkeep
           touch configs/immonet/dev/routings/.gitkeep
+          ls -la configs/
           git add configs/immonet/live/routings/.gitkeep
           git add configs/immonet/preview/routings/.gitkeep
           git add configs/immonet/dev/routings/.gitkeep
