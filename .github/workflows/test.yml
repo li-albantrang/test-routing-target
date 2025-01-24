@@ -33,6 +33,7 @@ jobs:
 
       - name: List files in unzipped directory
         run: |
+          cd $GITHUB_WORKSPACE
           pwd
           echo "Files in unzipped directory:"
           ls ./unzipped-assets
@@ -45,6 +46,7 @@ jobs:
        # Étape 4 : Remplacer les fichiers existants
       - name: Copy files to target directories
         run: |
+          cd $GITHUB_WORKSPACE
           cp ./unzipped-assets/configs/immonet/live.yml configs/immonet/live/routings/
           cp ./unzipped-assets/configs/immonet/preview.yml configs/immonet/preview/routings/
           cp ./unzipped-assets/configs/immonet/dev.yml configs/immonet/dev/routings/
