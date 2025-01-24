@@ -36,6 +36,9 @@ jobs:
           echo "Files in unzipped directory:"
           ls ./unzipped-assets
           ls -R ./unzipped-assets
+          ls -la configs/immonet/live/routings
+          ls -la configs/immonet/preview/routings
+          ls -la configs/immonet/dev/routings
 
       
        # Étape 4 : Remplacer les fichiers existants
