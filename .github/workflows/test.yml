@@ -33,6 +33,7 @@ jobs:
 
       - name: List files in unzipped directory
         run: |
+          pwd
           echo "Files in unzipped directory:"
           ls ./unzipped-assets
           ls -R ./unzipped-assets
