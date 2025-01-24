@@ -64,6 +64,8 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -b update-routing-configs
+          ls
+          git status
           git add configs/
           git commit -m "Update routing configurations from release ${{ github.event.client_payload.version }}"
 
