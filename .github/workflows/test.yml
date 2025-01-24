@@ -13,7 +13,7 @@ jobs:
         run: |
           repo_owner="li-albantrang"  # Propriétaire de repo1
           repo_name="test-routing"   # Nom de repo1
-          RELEASE_TAG="${{ github.event.client_payload.version }}""
+          RELEASE_TAG="${{ github.event.client_payload.version }}"
 
           echo "Téléchargement de l'asset depuis la release $RELEASE_TAG"
 
