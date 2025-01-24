@@ -61,6 +61,12 @@ jobs:
       # Étape 5 : Créer une nouvelle branche et commit
       - name: Commit changes
         run: |
+          touch configs/immonet/live/routings/.gitkeep
+          touch configs/immonet/preview/routings/.gitkeep
+          touch configs/immonet/dev/routings/.gitkeep
+          git add configs/immonet/live/routings/.gitkeep
+          git add configs/immonet/preview/routings/.gitkeep
+          git add configs/immonet/dev/routings/.gitkeep
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -b update-routing-configs
