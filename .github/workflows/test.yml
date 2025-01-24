@@ -2,19 +2,13 @@ name: Fetch and Process Release Asset
 
 on:
   repository_dispatch:
-    types:
-      - [triggered-by-release]
+    types: [triggered-by-release]
 
 jobs:
   download-and-process-asset:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Set up GitHub CLI
-        uses: cli/cli-action@v2
-        with:
-          gh-version: latest
-
       - name: Download the ZIP asset from repo1
         run: |
           repo_owner="li-albantrang"  # Propriétaire de repo1
