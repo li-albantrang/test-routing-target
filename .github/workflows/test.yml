@@ -37,7 +37,6 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE
           pwd
-          cd ..
           ls -la
           echo "Files in unzipped directory:"
           ls ./unzipped-assets
