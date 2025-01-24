@@ -66,7 +66,7 @@ jobs:
           git checkout -b update-routing-configs
           ls
           git status
-          git add configs/
+          git add -f configs/
           git commit -m "Update routing configurations from release ${{ github.event.client_payload.version }}"
 
       # Étape 6 : Pousser la branche et créer une PR
