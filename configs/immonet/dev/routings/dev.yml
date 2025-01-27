@@ -452,11 +452,7 @@ settings:
           - HEAD
           - GET
           - OPTIONS
-        cached_methods:
-          - HEAD
-          - GET
-          - OPTIONS
-        compress: true
+        
         cache_policy_id: cold
         origin_request_policy_id: s3
       - path_pattern: /assets/mfes/avis_pricePagesAgencyCards/*
