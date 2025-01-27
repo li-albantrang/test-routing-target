@@ -70,7 +70,7 @@ jobs:
           git add configs/immonet/dev/routings/.gitkeep
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -b update-routing-configs2
+          git checkout -b update-routing-configs-${{ github.event.client_payload.version }}
           ls
           git status
           git add -f configs/
