@@ -76,6 +76,18 @@ jobs:
           git add -f configs/
           git commit -m "Update routing configurations from release ${{ github.event.client_payload.version }}"
 
+
+      - name: Remove existing pull requests
+        run: |
+          pr_numbers=$(gh pr list --search "Update routing configurations in:title" --json number --jq '.[].number')
+  
+          for pr_number in $(echo "$pr_numbers"); do
+            gh pr close "$pr_number"
+          done
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
       # Étape 6 : Pousser la branche et créer une PR
       - name: Push branch and create PR
         run: |
