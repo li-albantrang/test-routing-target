@@ -1,0 +1,466 @@
+settings:
+  origins:
+    - id: app-iprf.s3
+      domain_name: app-iprf.s3.imn.preview.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: app-conp-dashboardLite.s3
+      domain_name: app-conp-dashboardLite.s3.imn.preview.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: app-conp-dashboardOld.s3
+      domain_name: app-conp-dashboardOld.s3.imn.preview.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: app-conp-documents.s3
+      domain_name: app-conp-documents.s3.imn.preview.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: app-esfu-estimaLandingPage.s3
+      domain_name: app-esfu-estimaLandingPage.s3.imn.preview.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: app-fsbo-depositFunnelLandingFrboFlats.s3
+      domain_name: app-fsbo-depositFunnelLandingFrboFlats.s3.imn.preview.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: app-fsbo-depositFunnelLandingFsrboGeneric.s3
+      domain_name: app-fsbo-depositFunnelLandingFsrboGeneric.s3.imn.preview.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: app-pric.s3
+      domain_name: app-pric.s3.imn.preview.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: app-cmsg-inbox.s3
+      domain_name: app-cmsg-inbox.s3.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: app-cldp.s3
+      domain_name: app-cldp.s3.imn.preview.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: app-conp-seeker.s3
+      domain_name: app-conp-seeker.s3.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: app-home-main.s3
+      domain_name: app-home-main.s3.imn.preview.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: app-home-newbuilds.s3
+      domain_name: app-home-newbuilds.s3.imn.preview.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: app-serp.s3
+      domain_name: app-serp.s3.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: app-serp-map.s3
+      domain_name: app-serp-map.s3.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: app-serp-project.s3
+      domain_name: app-serp-project.s3.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: app-skpf-seeker.s3
+      domain_name: app-skpf-seeker.s3.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: app-ssal-savedSearchManagement.s3
+      domain_name: app-ssal-savedSearchManagement.s3.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: app-ssal-savedSearchUnsubscribed.s3
+      domain_name: app-ssal-savedSearchUnsubscribed.s3.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: mfe-avis-agencyInTheSpotlight.s3
+      domain_name: mfe-avis-agencyInTheSpotlight.s3.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: mfe-avis-pricePagesAgencyCards.s3
+      domain_name: mfe-avis-pricePagesAgencyCards.s3.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: mfe-esfu-addressEntryPoint.s3
+      domain_name: mfe-esfu-addressEntryPoint.s3.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+  behaviors:
+    ordered_cache_behavior:
+      - path_pattern: /assets/apps/iprf/*
+        target_origin_id: app-iprf.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/apps/conp_dashboardLite/*
+        target_origin_id: app-conp-dashboardLite.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/apps/conp_dashboardOld/*
+        target_origin_id: app-conp-dashboardOld.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/apps/conp_documents/*
+        target_origin_id: app-conp-documents.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/apps/esfu_estimaLandingPage/*
+        target_origin_id: app-esfu-estimaLandingPage.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/apps/fsbo_depositFunnelLandingFrboFlats/*
+        target_origin_id: app-fsbo-depositFunnelLandingFrboFlats.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/apps/fsbo_depositFunnelLandingFsrboGeneric/*
+        target_origin_id: app-fsbo-depositFunnelLandingFsrboGeneric.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/apps/pric/*
+        target_origin_id: app-pric.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/apps/cmsg_inbox/*
+        target_origin_id: app-cmsg-inbox.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/apps/cldp/*
+        target_origin_id: app-cldp.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/apps/conp_seeker/*
+        target_origin_id: app-conp-seeker.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/apps/home_main/*
+        target_origin_id: app-home-main.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/apps/home_newbuilds/*
+        target_origin_id: app-home-newbuilds.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/apps/serp/*
+        target_origin_id: app-serp.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/apps/serp_map/*
+        target_origin_id: app-serp-map.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/apps/serp_project/*
+        target_origin_id: app-serp-project.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/apps/skpf_seeker/*
+        target_origin_id: app-skpf-seeker.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/apps/ssal_savedSearchManagement/*
+        target_origin_id: app-ssal-savedSearchManagement.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/apps/ssal_savedSearchUnsubscribed/*
+        target_origin_id: app-ssal-savedSearchUnsubscribed.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/mfes/avis_agencyInTheSpotlight/*
+        target_origin_id: mfe-avis-agencyInTheSpotlight.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/mfes/avis_pricePagesAgencyCards/*
+        target_origin_id: mfe-avis-pricePagesAgencyCards.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/mfes/esfu_addressEntryPoint/*
+        target_origin_id: mfe-esfu-addressEntryPoint.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3

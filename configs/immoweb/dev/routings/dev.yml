@@ -1,0 +1,88 @@
+settings:
+  origins:
+    - id: app-conp-favoritesOffline.s3
+      domain_name: app-conp-favoritesOffline.s3.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: mfe-avis-agencyInTheSpotlight.s3
+      domain_name: mfe-avis-agencyInTheSpotlight.s3.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: mfe-avis-pricePagesAgencyCards.s3
+      domain_name: mfe-avis-pricePagesAgencyCards.s3.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+    - id: mfe-esfu-addressEntryPoint.s3
+      domain_name: mfe-esfu-addressEntryPoint.s3.eu-west-1.amazonaws.com
+      s3: true
+      origin_path: ""
+      custom_headers: []
+      shield:
+        enable: true
+        region: eu-west-1
+  behaviors:
+    ordered_cache_behavior:
+      - path_pattern: /assets/apps/conp_favoritesOffline/*
+        target_origin_id: app-conp-favoritesOffline.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/mfes/avis_agencyInTheSpotlight/*
+        target_origin_id: mfe-avis-agencyInTheSpotlight.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/mfes/avis_pricePagesAgencyCards/*
+        target_origin_id: mfe-avis-pricePagesAgencyCards.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
+      - path_pattern: /assets/mfes/esfu_addressEntryPoint/*
+        target_origin_id: mfe-esfu-addressEntryPoint.s3
+        allowed_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        cached_methods:
+          - HEAD
+          - GET
+          - OPTIONS
+        compress: true
+        cache_policy_id: cold
+        origin_request_policy_id: s3
