@@ -79,11 +79,11 @@ jobs:
       # Étape 6 : Pousser la branche et créer une PR
       - name: Push branch and create PR
         run: |
-          git push --set-upstream origin update-routing-configs2
+          git push --set-upstream origin update-routing-configs-${{ github.event.client_payload.version }}
           gh pr create \
             --title "Update routing configurations from release ${{ github.event.client_payload.version }}" \
             --body "This PR updates the routing configurations from the latest release ${{ github.event.client_payload.version }} in repo1." \
             --base main \
-            --head update-routing-configs2
+            --head update-routing-configs-${{ github.event.client_payload.version }}
         env:
           GH_TOKEN: ${{ secrets.PAT_TOKEN }}
